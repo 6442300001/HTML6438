@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Karakada">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: brown;"> input element </span>can be displayed in many ways, depending on the <span
+            style="color: brown;">type</span> attribute.</p>
+    <form action="">
+        <fieldset style="background-color: antiquewhite;">
+            <legend>Text Field</legend>
+            <label for="fname">First name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="ป้อนชื่อ"><span style="color: red;">*</span><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="ป้อนนามสกุล"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="กรุณาป้อนอีเมล"><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" placeholder="ป้อนอายุ" min="0" max="200"><br>
+            <label for="age2">Age-read-only</label><br>
+            <input type="number" name="age2" id="age2" placeholder="ป้อนอายุ" readonly value="30"><br>
+            <label for="birthday">Birthday</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
+            <label for="phone">Phone</label><br>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="web">Website</label><br>
+            <input type="url" name="web" id="web"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Radio Button</legend>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="gender" value="M">Male
+            <input type="radio" name="gender" id="gender" value="F">Female
+        </fieldset><br>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="hobby">Hobby : </label>
+            <input type="checkbox" name="eat" id="eat" value="E">eat
+            <input type="checkbox" name="sleep" id="sleep" value="S">sleep
+            <input type="checkbox" name="code" id="code" value="C">code
+        </fieldset><br>
+        <fieldset>
+            <legend>Select</legend>
+            <label for="Province">Province : </label>
+            <select name="Province" id="Province">
+                <option value="Bangkok" >Bangkok</option>
+                <option value="Nakhon Pathom">Nakhon Pathom</option>
+                <option value="Songkla"selected>Songkla</option>
+                <option value="Rachaburi">Rachaburi</option>
+            </select><br>
+            <label for="FavoriteSub">Favorite Subject : </label>
+            <select name="FavoriteSub" id="FavoriteSub" size="3" multiple>
+                <option value="Thai">Thai</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Computer">Computer</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="adder">Address : </label>
+            <textarea name="address" id="address" cols="30" rows="10">
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Text Area With CSS</legend>
+            <label for="note">Note : </label>
+            <textarea name="note" id="note" style="width: 80%; height: 100px;" >
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Other</legend>
+            <label for="FavoriteC">FavoriteColor</label>
+            <input type="color" name="color" id="color"><br>
+            <label for="upload">Upload File</label>
+            <input type="file" name="upload" id="upload">
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="ยืนยัน">
+        <input type="reset" >
+        <button>ล้างข้อมูล</button>
+      <a href="home.html">  <input type="button" value="กลับบ้านหลัก"></a>
+
+    </form>
+
+</body>
+
+</html>
