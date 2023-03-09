@@ -183,4 +183,274 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Karakada">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: brown;"> input element </span>can be displayed in many ways, depending on the <span
+            style="color: brown;">type</span> attribute.</p>
+    <form action="">
+        <fieldset style="background-color: antiquewhite;">
+            <legend>Text Field</legend>
+            <label for="fname">First name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="ป้อนชื่อ"><span style="color: red;">*</span><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="ป้อนนามสกุล"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="กรุณาป้อนอีเมล"><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" placeholder="ป้อนอายุ" min="0" max="200"><br>
+            <label for="age2">Age-read-only</label><br>
+            <input type="number" name="age2" id="age2" placeholder="ป้อนอายุ" readonly value="30"><br>
+            <label for="birthday">Birthday</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
+            <label for="phone">Phone</label><br>
+            <input type="tel" name="phone" id="phone"><br>
+            <label for="web">Website</label><br>
+            <input type="url" name="web" id="web"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Radio Button</legend>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="gender" value="M">Male
+            <input type="radio" name="gender" id="gender" value="F">Female
+        </fieldset><br>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="hobby">Hobby : </label>
+            <input type="checkbox" name="eat" id="eat" value="E">eat
+            <input type="checkbox" name="sleep" id="sleep" value="S">sleep
+            <input type="checkbox" name="code" id="code" value="C">code
+        </fieldset><br>
+        <fieldset>
+            <legend>Select</legend>
+            <label for="Province">Province : </label>
+            <select name="Province" id="Province">
+                <option value="Bangkok" >Bangkok</option>
+                <option value="Nakhon Pathom">Nakhon Pathom</option>
+                <option value="Songkla"selected>Songkla</option>
+                <option value="Rachaburi">Rachaburi</option>
+            </select><br>
+            <label for="FavoriteSub">Favorite Subject : </label>
+            <select name="FavoriteSub" id="FavoriteSub" size="3" multiple>
+                <option value="Thai">Thai</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="Computer">Computer</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="adder">Address : </label>
+            <textarea name="address" id="address" cols="30" rows="10">
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Text Area With CSS</legend>
+            <label for="note">Note : </label>
+            <textarea name="note" id="note" style="width: 80%; height: 100px;" >
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Other</legend>
+            <label for="FavoriteC">FavoriteColor</label>
+            <input type="color" name="color" id="color"><br>
+            <label for="upload">Upload File</label>
+            <input type="file" name="upload" id="upload">
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="ยืนยัน">
+        <input type="reset" >
+        <button>ล้างข้อมูล</button>
+      <a href="home.html">  <input type="button" value="กลับบ้านหลัก"></a>
+
+    </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Karakada">
+    <title>Formlogin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: 'Kanit', sans-serif;
+        }
+
+
+        .container {
+
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 100px;
+            width: 350px;
+            height: 250px
+        }
+
+        .logo {
+            margin-right: auto;
+            margin-left: auto;
+            width: 25%;
+
+        }
+
+        img {
+            margin-top: 20px;
+        }
+
+        input {
+            margin-top: 10px;
+
+        }
+
+
+        .tab {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/R.c4cbe8414bb9bfe95695009229b7cbcd?rik=a4aoOROHD9tIXA&riu=http%3a%2f%2fwww.gamespersecond.com%2fmedia%2f2013%2f04%2frazer-logo.jpg&ehk=bZn%2b0PcQApn7rI5j%2b%2f5%2bTNygSz7MQigg5AsF9%2fXdHjM%3d&risl=&pid=ImgRaw&r=0"
+                alt="logo" style="width: 100%;">
+        </div>
+        <label for="email" class="tab" style="margin-left: 70px;  ">อีเมล : </label>
+        <input type="email" name="email" id="email" placeholder="ป้อนอีเมล"><br>
+        <label for="password" class="tab">รหัสผ่าน : </label>
+        <input type="password" name="password" id="password" placeholder="ป้อนรหัสผ่าน"><br>
+        <input type="checkbox" name="แสดงรหัสผ่าน" id="แสดงรหัสผ่าน" value="แสดงรหัสผ่าน" style="margin-left: 115px;">
+        <span style="color: blue;">
+            แสดงรหัสผ่าน</span>
+
+        <br>
+        <input type="submit" value="ลงทะเบียน" style="margin-left: 135px;">
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="karakada">
+    <title>Resume by CSS</title>
+    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Bangna";
+            src: url('font/bangna-new.ttf'),
+                url('font/bangna-new.eot');
+
+        }
+
+        * {
+            font-family: "Bangna";
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html"> Home</a></li>
+                    <li> Education</a></li>
+                    <li> Experience</a></li>
+                    <li> Skill</a></li>
+                    <li>Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="logo">
+                <img class="imglogo" src="images/screen-0.jpg" alt="KFC" width="35px">
+            </div>
+            <div class="logoname">Karakada</div>
+        </header>
+        <div class="banner">
+            <img src="images/1666145404479.jpg" alt="บัวขาว">
+        </div>
+        <div class="content">
+            <div class="subcontent">
+                <h2>ABOUT ME</h2>
+                <p>
+                    Name : Karakada Premkit <br>
+                    ชื่อสกลุ : กรกฎา เปรมกิจ <br>
+                    Nickname : Chow <br>
+                    Phone No.: 096-2587461
+                </p>
+            </div>
+            <div class="subcontent">
+                <h2>Education</h2>
+                <p>
+                    # High School : Samutsakhon WittayalaiSchool, Samutsakhon,[2020]
+                </p>
+                <p>Nakhon Pathom Rajabhat University, 2022
+
+                </p>
+            </div>
+
+
+            <div class="subcontent">
+                <h2>Computer Skill</h2>
+                <p>
+                 Application : Adobe XD,Photoshop,Microsoft Office,Google App<br>
+                 Programming : Java,HTML,CSS<br>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p style="font-family: 'Roboto Mono', monospace;">เทคโนโลยีสารสนเทศ<br>มหาวิทยาลัยราชภัฏนครปฐม</p>
+        </footer>
+    </main>
+</body>
+
+</html>
